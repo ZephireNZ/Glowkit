@@ -10,8 +10,16 @@ import org.apache.commons.lang.Validate;
  */
 public class DynamicRecipe implements Recipe {
 
-    private ItemMatcher matcher = new ItemMatcher();
+    private ItemMatcher matcher;
     private ItemStack result;
+
+    public DynamicRecipe() {
+        setMatcher(new ItemMatcher());
+    }
+
+    public DynamicRecipe(ItemMatcher matcher) {
+        setMatcher(matcher);
+    }
 
     /**
      * Sets the {@link ItemMatcher} to be used with this recipe.
