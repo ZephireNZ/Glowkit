@@ -41,10 +41,6 @@ public class DynamicRecipe implements Recipe {
         return result != null;
     }
 
-    public void cleanup(ItemStack[] matrix) {
-        matcher.cleanup(matrix, result);
-    }
-
     /**
      * Gets the result of this recipe, given the input of {@link #matches(ItemStack[])}.
      * @return The result of the recipe, or null if it does not match
