@@ -42,7 +42,7 @@ public class PotionEffect implements ConfigurationSerializable {
     }
 
     /**
-     * Creates a potion effect. Assumes particles is true.
+     * Creates a potion effect.
      *
      * @param type effect type
      * @param duration measured in ticks, see {@link
